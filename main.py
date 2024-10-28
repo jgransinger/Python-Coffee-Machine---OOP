@@ -9,7 +9,7 @@ cafe_money = MoneyMachine()
 power_on = True
 
 while power_on:
-    customer_order = input("What would you like to drink? (latte, cappuccino, or espresso): \n")
+    customer_order = input(f"What would you like to drink? ({cafe_menu.get_items()}): \n")
     if customer_order == "report":
         cafe_machine.report()
         cafe_money.report()
